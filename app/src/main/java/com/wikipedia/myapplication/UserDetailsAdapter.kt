@@ -38,9 +38,9 @@ class UserDetailsAdapter internal constructor(private val list: ArrayList<User>)
         var tvWebsite = itemView.tvWebsite
         fun bindView(viewHolder: UserViewHolder, position: Int, context: Context?) {
             val user:User = list.get(position)
-           viewHolder.tvName.text =user.name
-           viewHolder.tvEmail.text =user.email
-           viewHolder.tvWebsite.text =user.website
+           viewHolder.tvName.text ="Name :"+user.name
+           viewHolder.tvEmail.text ="Email :"+user.email
+           viewHolder.tvWebsite.text ="Website :"+user.website
         }
     }
 

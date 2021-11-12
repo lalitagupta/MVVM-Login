@@ -1,8 +1,10 @@
 package com.wikipedia.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,7 +16,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         loginViewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
         login.setOnClickListener { loginClick() }
-
+        loginViewModel.userMutableLiveData?.observe(this, {
+            Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,UserDetails::class.java))
+        })
     }
 
     private fun loginClick() {
