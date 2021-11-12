@@ -1,9 +1,9 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.login
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
-import com.google.gson.Gson
+import com.wikipedia.myapplication.network.RetrofitClient
 import okhttp3.ResponseBody
 import org.json.JSONObject
 import retrofit2.Call

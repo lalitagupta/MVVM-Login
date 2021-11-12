@@ -1,4 +1,4 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.user
 
 import android.os.Parcelable
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties

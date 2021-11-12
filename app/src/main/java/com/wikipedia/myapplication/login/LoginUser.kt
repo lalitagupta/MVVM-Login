@@ -1,4 +1,4 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.login
 
 data class LoginUser(val email:String,val  password:String){
 

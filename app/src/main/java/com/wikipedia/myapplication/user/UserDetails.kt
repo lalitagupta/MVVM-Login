@@ -1,9 +1,10 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.user
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.wikipedia.myapplication.R
 import kotlinx.android.synthetic.main.activity_user_details.*
 
 class UserDetails : AppCompatActivity() {

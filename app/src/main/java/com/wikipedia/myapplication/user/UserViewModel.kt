@@ -1,17 +1,15 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.user
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.google.gson.Gson
+import com.wikipedia.myapplication.network.RetrofitClient
+import com.wikipedia.myapplication.login.LoginUser
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.util.Arrays
-
-
 
 
 class UserViewModel : ViewModel(), Callback<ResponseBody> {

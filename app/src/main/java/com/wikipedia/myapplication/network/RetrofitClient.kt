@@ -1,7 +1,6 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.network
 
 import com.google.gson.GsonBuilder
-import com.wikipedia.myapplication.RetrofitClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

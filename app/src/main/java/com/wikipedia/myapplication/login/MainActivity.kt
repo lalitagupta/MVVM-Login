@@ -1,4 +1,4 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
+import com.wikipedia.myapplication.R
+import com.wikipedia.myapplication.user.UserDetails
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         login.setOnClickListener { loginClick() }
         loginViewModel.userMutableLiveData?.observe(this, {
             Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this,UserDetails::class.java))
+            startActivity(Intent(this, UserDetails::class.java))
         })
     }
 

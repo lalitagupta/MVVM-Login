@@ -1,11 +1,11 @@
-package com.wikipedia.myapplication
+package com.wikipedia.myapplication.user
 
 import android.content.Context
-import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.wikipedia.myapplication.R
 
 import kotlinx.android.synthetic.main.item_user.view.*
 
@@ -37,7 +37,7 @@ class UserDetailsAdapter internal constructor(private val list: ArrayList<User>)
         var tvEmail = itemView.tvEmail
         var tvWebsite = itemView.tvWebsite
         fun bindView(viewHolder: UserViewHolder, position: Int, context: Context?) {
-            val user:User = list.get(position)
+            val user: User = list.get(position)
            viewHolder.tvName.text ="Name :"+user.name
            viewHolder.tvEmail.text ="Email :"+user.email
            viewHolder.tvWebsite.text ="Website :"+user.website
